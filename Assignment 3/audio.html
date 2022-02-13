@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>BTI225</title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/lab3-theme.css"/>
+	<script src="js/audio.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="center">
+			<h2>
+			     BTI225 - Assignment 3
+			</h2>
+		</div>
+	</header>
+	<nav>
+		<div class="center">
+		<ul>	
+			<li><a href="index.html">Home</a></li>
+			<li><a href="list.html">List</a></li>
+			<li><a href="table.html">Table</a></li>
+			<li><a href="image.html">Image</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="seneca.html">Seneca</a></li>
+			<li><a href="honesty.html">Honesty</a></li>
+		</ul>
+		</div>
+	</nav>
+		
+	<section class="main center">
+	
+	<!-- Start your code here -->
+		<h2>HTML5 Audio</h2>
+		<div id = "id">
+		</div>
+		<script>
+			window.onload = function(){
+				var x = document.getElementById("id");
+				var aud = "<audio controls = >" + audio.controls;
+				for(var i = 0; i < audio.source.length; i++){
+					aud += '<source src = "' + audio.source[i].src + '" type = "' + audio.source[i].type + '">';
+				}
+				aud += "</audio>";	
+				x.innerHTML = aud;
+			}
+		</script>
+	
+	<!-- End your code here  -->
+	
+	</section>
+	<footer>
+	  <div class="center">
+		  &copy; 2017 Student Name
+	  </div>
+	</footer>
+</body>
+</html>	  
